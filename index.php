@@ -8,7 +8,6 @@
             font-family: Arial;
             background: linear-gradient(to right, #ffd6e0, #e0c3fc);
             margin: 0;
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,10 +25,6 @@
         h2 {
             text-align: center;
             color: #ff6f91;
-        }
-
-        label {
-            font-size: 14px;
         }
 
         input {
@@ -56,24 +51,13 @@
     <h2>Form Data</h2>
 
     <form method="POST" action="proses.php">
-
-        <label>Nama</label>
-        <input type="text" name="nama" required>
-
-        <label>Kelas</label>
-        <input type="text" name="kelas" placeholder="Contoh: TI-2A" required>
-
-        <label>Nilai Tugas</label>
-        <input type="number" name="tugas" required>
-
-        <label>Nilai UTS</label>
-        <input type="number" name="uts" required>
-
-        <label>Nilai UAS</label>
-        <input type="number" name="uas" required>
+        <input type="text" name="nama" placeholder="Nama" required>
+        <input type="text" name="kelas" placeholder="Kelas (TI-2A)" required>
+        <input type="number" name="tugas" placeholder="Nilai Tugas" required>
+        <input type="number" name="uts" placeholder="Nilai UTS" required>
+        <input type="number" name="uas" placeholder="Nilai UAS" required>
 
         <button type="submit">Submit</button>
-
     </form>
 </div>
 
